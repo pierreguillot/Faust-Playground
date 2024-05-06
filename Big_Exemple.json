@@ -1,0 +1,768 @@
+{
+    "name": "Tuned Bar",
+    "filename": "Big_Exemple",
+    "version": "2.74.0",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/basics.lib",
+        "/usr/share/faust/maths.lib",
+        "/usr/share/faust/platform.lib",
+        "/usr/share/faust/delays.lib",
+        "/usr/share/faust/instruments.lib",
+        "/usr/share/faust/filters.lib",
+        "/usr/share/faust/signals.lib",
+        "/usr/share/faust/noises.lib",
+        "/usr/share/faust/reverbs.lib",
+        "/usr/share/faust/routes.lib",
+        "/usr/share/faust/vaeffects.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 1226088,
+    "code": "iM48CuTXHg==",
+    "inputs": 0,
+    "outputs": 2,
+    "meta": [
+        {
+            "author": "ER"
+        },
+        {
+            "contributor": "Grame"
+        },
+        {
+            "contributor": "Yann Orlarey"
+        },
+        {
+            "basics.lib/name": "Faust Basic Element Library"
+        },
+        {
+            "basics.lib/tabulateNd": "Copyright (C) 2023 Bart Brouns <bart@magnetophon.nl>"
+        },
+        {
+            "basics.lib/version": "1.15.0"
+        },
+        {
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "copyright": "(c) GRAME 2006"
+        },
+        {
+            "delays.lib/fdelay4:author": "Julius O. Smith III"
+        },
+        {
+            "delays.lib/fdelayltv:author": "Julius O. Smith III"
+        },
+        {
+            "delays.lib/name": "Faust Delay Library"
+        },
+        {
+            "delays.lib/version": "1.1.0"
+        },
+        {
+            "description": "Nonlinear Banded Waveguide Models"
+        },
+        {
+            "filename": "Big_Exemple"
+        },
+        {
+            "filters.lib/allpass_comb:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/allpass_comb:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/allpass_comb:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/ff_comb:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/ff_comb:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/ff_comb:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/fir:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/fir:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/fir:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/iir:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/iir:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/iir:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/levelfilter:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/levelfilter:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/levelfilter:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/lowpass0_highpass1": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/lowpass0_highpass1:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/lowpass:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/lowpass:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/lowpass:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/name": "Faust Filters Library"
+        },
+        {
+            "filters.lib/tf1:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/tf1:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/tf1:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/tf1s:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/tf1s:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/tf1s:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/tf2:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/tf2:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/tf2:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/version": "1.3.0"
+        },
+        {
+            "instruments.lib/author": "Romain Michon (rmichon@ccrma.stanford.edu)"
+        },
+        {
+            "instruments.lib/copyright": "Romain Michon"
+        },
+        {
+            "instruments.lib/licence": "STK-4.3"
+        },
+        {
+            "instruments.lib/name": "Faust-STK Tools Library"
+        },
+        {
+            "instruments.lib/version": "1.0.0"
+        },
+        {
+            "license": "BSD"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.0"
+        },
+        {
+            "name": "Tuned Bar"
+        },
+        {
+            "noises.lib/name": "Faust Noise Generator Library"
+        },
+        {
+            "noises.lib/version": "1.4.1"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        },
+        {
+            "reference": "https://ccrma.stanford.edu/~jos/pasp/Freeverb.html"
+        },
+        {
+            "reverbs.lib/name": "Faust Reverb Library"
+        },
+        {
+            "reverbs.lib/version": "1.2.1"
+        },
+        {
+            "routes.lib/hadamard:author": "Remy Muller, revised by Romain Michon"
+        },
+        {
+            "routes.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "routes.lib/version": "1.2.0"
+        },
+        {
+            "signals.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "signals.lib/version": "1.5.0"
+        },
+        {
+            "vaeffects.lib/name": "Faust Virtual Analog Filter Effect Library"
+        },
+        {
+            "vaeffects.lib/version": "1.2.1"
+        },
+        {
+            "version": "1.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "Big_Exemple",
+            "items": [
+                {
+                    "type": "vgroup",
+                    "label": "Freeverb",
+                    "items": [
+                        {
+                            "type": "vgroup",
+                            "label": "Freeverb",
+                            "items": [
+                                {
+                                    "type": "hslider",
+                                    "label": "Reverberation Intensity",
+                                    "shortname": "Reverberation_Intensity",
+                                    "address": "/Big_Exemple/Freeverb/Freeverb/Reverberation_Intensity",
+                                    "index": 131312,
+                                    "meta": [
+                                        {
+                                            "acc": "1 1 -10 0 10"
+                                        }
+                                    ],
+                                    "init": 0.3333,
+                                    "min": 0.1,
+                                    "max": 0.9,
+                                    "step": 0.025
+                                },
+                                {
+                                    "type": "hslider",
+                                    "label": "Reverberation Room Size",
+                                    "shortname": "Freeverb_Reverberation_Room_Size",
+                                    "address": "/Big_Exemple/Freeverb/Freeverb/Reverberation_Room_Size",
+                                    "index": 131332,
+                                    "meta": [
+                                        {
+                                            "acc": "1 1 -10 0 10"
+                                        }
+                                    ],
+                                    "init": 0.5,
+                                    "min": 0.1,
+                                    "max": 0.9,
+                                    "step": 0.025
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "InstrReverb",
+                    "items": [
+                        {
+                            "type": "vgroup",
+                            "label": "Reverb",
+                            "items": [
+                                {
+                                    "type": "hslider",
+                                    "label": "Reverberation Room Size",
+                                    "shortname": "Reverb_Reverberation_Room_Size",
+                                    "address": "/Big_Exemple/InstrReverb/Reverb/Reverberation_Room_Size",
+                                    "index": 172,
+                                    "meta": [
+                                        {
+                                            "acc": "1 1 -10 0 10"
+                                        }
+                                    ],
+                                    "init": 0.1,
+                                    "min": 0.05,
+                                    "max": 2,
+                                    "step": 0.01
+                                },
+                                {
+                                    "type": "hslider",
+                                    "label": "Reverberation Volume",
+                                    "shortname": "Reverberation_Volume",
+                                    "address": "/Big_Exemple/InstrReverb/Reverb/Reverberation_Volume",
+                                    "index": 131300,
+                                    "meta": [
+                                        {
+                                            "acc": "1 1 -10 0 10"
+                                        }
+                                    ],
+                                    "init": 0.1,
+                                    "min": 0.05,
+                                    "max": 1,
+                                    "step": 0.01
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "Kisana",
+                    "items": [
+                        {
+                            "type": "vgroup",
+                            "label": "Kisana",
+                            "items": [
+                                {
+                                    "type": "hgroup",
+                                    "label": "Instrument Hands",
+                                    "meta": [
+                                        {
+                                            "1": ""
+                                        }
+                                    ],
+                                    "items": [
+                                        {
+                                            "type": "vslider",
+                                            "label": "1 (Note 48)",
+                                            "shortname": "1_Note_48",
+                                            "address": "/Big_Exemple/Kisana/Kisana/Instrument_Hands/1__Note_48_",
+                                            "index": 1202540,
+                                            "meta": [
+                                                {
+                                                    "acc": "1 0 -10 0 14"
+                                                },
+                                                {
+                                                    "unit": "pk"
+                                                }
+                                            ],
+                                            "init": 0,
+                                            "min": 0,
+                                            "max": 11,
+                                            "step": 1
+                                        },
+                                        {
+                                            "type": "vslider",
+                                            "label": "2 (Note 60)",
+                                            "shortname": "2_Note_60",
+                                            "address": "/Big_Exemple/Kisana/Kisana/Instrument_Hands/2__Note_60_",
+                                            "index": 1205240,
+                                            "meta": [
+                                                {
+                                                    "acc": "1 0 -10 0 14"
+                                                },
+                                                {
+                                                    "unit": "pk"
+                                                }
+                                            ],
+                                            "init": 2,
+                                            "min": 0,
+                                            "max": 11,
+                                            "step": 1
+                                        },
+                                        {
+                                            "type": "vslider",
+                                            "label": "3 (Note 72)",
+                                            "shortname": "3_Note_72",
+                                            "address": "/Big_Exemple/Kisana/Kisana/Instrument_Hands/3__Note_72_",
+                                            "index": 1222524,
+                                            "meta": [
+                                                {
+                                                    "acc": "1 0 -10 0 10"
+                                                },
+                                                {
+                                                    "unit": "pk"
+                                                }
+                                            ],
+                                            "init": 4,
+                                            "min": 0,
+                                            "max": 11,
+                                            "step": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "hslider",
+                                    "label": "Brightness",
+                                    "shortname": "Brightness",
+                                    "address": "/Big_Exemple/Kisana/Kisana/Brightness",
+                                    "index": 1202448,
+                                    "meta": [
+                                        {
+                                            "2": ""
+                                        },
+                                        {
+                                            "acc": "0 1 -10 0 10"
+                                        }
+                                    ],
+                                    "init": 0.2,
+                                    "min": 0,
+                                    "max": 1,
+                                    "step": 0.01
+                                },
+                                {
+                                    "type": "hslider",
+                                    "label": "Resonance",
+                                    "shortname": "Kisana_Resonance",
+                                    "address": "/Big_Exemple/Kisana/Kisana/Resonance",
+                                    "index": 1202360,
+                                    "meta": [
+                                        {
+                                            "3": ""
+                                        },
+                                        {
+                                            "acc": "2 1 -10 0 12"
+                                        }
+                                    ],
+                                    "init": 4,
+                                    "min": 0.1,
+                                    "max": 10,
+                                    "step": 0.01
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "SAtonalSoftHarp",
+                    "items": [
+                        {
+                            "type": "hgroup",
+                            "label": "0x00",
+                            "meta": [
+                                {
+                                    "1": ""
+                                }
+                            ],
+                            "items": [
+                                {
+                                    "type": "hslider",
+                                    "label": "Instrument Hand",
+                                    "shortname": "SAtonalSoftHarp_Instrument_Hand",
+                                    "address": "/Big_Exemple/SAtonalSoftHarp/0x00/Instrument_Hand",
+                                    "index": 420256,
+                                    "meta": [
+                                        {
+                                            "acc": "0 1 -10 0 10"
+                                        }
+                                    ],
+                                    "init": 10,
+                                    "min": 0,
+                                    "max": 20,
+                                    "step": 1
+                                },
+                                {
+                                    "type": "hslider",
+                                    "label": "Speed",
+                                    "shortname": "SAtonalSoftHarp_Speed",
+                                    "address": "/Big_Exemple/SAtonalSoftHarp/0x00/Speed",
+                                    "index": 420228,
+                                    "meta": [
+                                        {
+                                            "acc": "0 1 -10 0 10"
+                                        },
+                                        {
+                                            "style": "knob"
+                                        }
+                                    ],
+                                    "init": 480,
+                                    "min": 180,
+                                    "max": 720,
+                                    "step": 1
+                                }
+                            ]
+                        },
+                        {
+                            "type": "hgroup",
+                            "label": "Reverberation",
+                            "meta": [
+                                {
+                                    "2": ""
+                                }
+                            ],
+                            "items": [
+                                {
+                                    "type": "hslider",
+                                    "label": "Resonance",
+                                    "shortname": "Reverberation_Resonance",
+                                    "address": "/Big_Exemple/SAtonalSoftHarp/Reverberation/Resonance",
+                                    "index": 422376,
+                                    "meta": [
+                                        {
+                                            "acc": "2 1 -10 0 10"
+                                        },
+                                        {
+                                            "unit": "s"
+                                        }
+                                    ],
+                                    "init": 5,
+                                    "min": 0.5,
+                                    "max": 10,
+                                    "step": 0.01
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "STunedBar6",
+                    "items": [
+                        {
+                            "type": "vgroup",
+                            "label": "tunedBars",
+                            "items": [
+                                {
+                                    "type": "hgroup",
+                                    "label": "0x00",
+                                    "meta": [
+                                        {
+                                            "1": ""
+                                        }
+                                    ],
+                                    "items": [
+                                        {
+                                            "type": "hgroup",
+                                            "label": "Bar 0",
+                                            "items": [
+                                                {
+                                                    "type": "vslider",
+                                                    "label": "Instrument Hand",
+                                                    "shortname": "Bar_0_Instrument_Hand",
+                                                    "address": "/Big_Exemple/STunedBar6/tunedBars/0x00/Bar_0/Instrument_Hand",
+                                                    "index": 131440,
+                                                    "meta": [
+                                                        {
+                                                            "acc": "1 0 -10 0 18"
+                                                        }
+                                                    ],
+                                                    "init": 0,
+                                                    "min": 0,
+                                                    "max": 5,
+                                                    "step": 1
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "hgroup",
+                                            "label": "Bar 1",
+                                            "items": [
+                                                {
+                                                    "type": "vslider",
+                                                    "label": "Instrument Hand",
+                                                    "shortname": "Bar_1_Instrument_Hand",
+                                                    "address": "/Big_Exemple/STunedBar6/tunedBars/0x00/Bar_1/Instrument_Hand",
+                                                    "index": 200744,
+                                                    "meta": [
+                                                        {
+                                                            "acc": "1 0 -10 0 18"
+                                                        }
+                                                    ],
+                                                    "init": 0,
+                                                    "min": 0,
+                                                    "max": 5,
+                                                    "step": 1
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "hgroup",
+                                            "label": "Bar 2",
+                                            "items": [
+                                                {
+                                                    "type": "vslider",
+                                                    "label": "Instrument Hand",
+                                                    "shortname": "Bar_2_Instrument_Hand",
+                                                    "address": "/Big_Exemple/STunedBar6/tunedBars/0x00/Bar_2/Instrument_Hand",
+                                                    "index": 235752,
+                                                    "meta": [
+                                                        {
+                                                            "acc": "1 0 -10 0 14"
+                                                        }
+                                                    ],
+                                                    "init": 2,
+                                                    "min": 0,
+                                                    "max": 5,
+                                                    "step": 1
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "hgroup",
+                                            "label": "Bar 3",
+                                            "items": [
+                                                {
+                                                    "type": "vslider",
+                                                    "label": "Instrument Hand",
+                                                    "shortname": "Bar_3_Instrument_Hand",
+                                                    "address": "/Big_Exemple/STunedBar6/tunedBars/0x00/Bar_3/Instrument_Hand",
+                                                    "index": 253596,
+                                                    "meta": [
+                                                        {
+                                                            "acc": "1 0 -10 0 14"
+                                                        }
+                                                    ],
+                                                    "init": 2,
+                                                    "min": 0,
+                                                    "max": 5,
+                                                    "step": 1
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "hgroup",
+                                            "label": "Bar 4",
+                                            "items": [
+                                                {
+                                                    "type": "vslider",
+                                                    "label": "Instrument Hand",
+                                                    "shortname": "Bar_4_Instrument_Hand",
+                                                    "address": "/Big_Exemple/STunedBar6/tunedBars/0x00/Bar_4/Instrument_Hand",
+                                                    "index": 262792,
+                                                    "meta": [
+                                                        {
+                                                            "acc": "1 0 -10 0 10"
+                                                        }
+                                                    ],
+                                                    "init": 4,
+                                                    "min": 0,
+                                                    "max": 5,
+                                                    "step": 1
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "hgroup",
+                                            "label": "Bar 5",
+                                            "items": [
+                                                {
+                                                    "type": "vslider",
+                                                    "label": "Instrument Hand",
+                                                    "shortname": "Bar_5_Instrument_Hand",
+                                                    "address": "/Big_Exemple/STunedBar6/tunedBars/0x00/Bar_5/Instrument_Hand",
+                                                    "index": 267652,
+                                                    "meta": [
+                                                        {
+                                                            "acc": "1 0 -10 0 10"
+                                                        }
+                                                    ],
+                                                    "init": 4,
+                                                    "min": 0,
+                                                    "max": 5,
+                                                    "step": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "WahWah",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "Wah Wah",
+                            "shortname": "Wah_Wah",
+                            "address": "/Big_Exemple/WahWah/Wah_Wah",
+                            "index": 124,
+                            "meta": [
+                                {
+                                    "1": ""
+                                },
+                                {
+                                    "acc": "0 1 -10 0 10"
+                                }
+                            ],
+                            "init": 0.6,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "Speed",
+                            "shortname": "WahWah_Speed",
+                            "address": "/Big_Exemple/WahWah/Speed",
+                            "index": 96,
+                            "meta": [
+                                {
+                                    "2": ""
+                                },
+                                {
+                                    "acc": "0 1 -10 0 10"
+                                }
+                            ],
+                            "init": 540,
+                            "min": 360,
+                            "max": 780,
+                            "step": 0.1
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "Wah wah intensity",
+                            "shortname": "Wah_wah_intensity",
+                            "address": "/Big_Exemple/WahWah/Wah_wah_intensity",
+                            "index": 0,
+                            "meta": [
+                                {
+                                    "3": ""
+                                },
+                                {
+                                    "acc": "1 0 -10 0 10"
+                                },
+                                {
+                                    "style": "knob"
+                                },
+                                {
+                                    "unit": "%"
+                                }
+                            ],
+                            "init": 60,
+                            "min": 0,
+                            "max": 100,
+                            "step": 0.01
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
